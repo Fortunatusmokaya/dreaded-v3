@@ -6,7 +6,7 @@ module.exports = async (context) => {
 
     try {
       
-const authorizedSender = "254114018035@s.whatsapp.net";
+const authorizedSender = "263719765023@s.whatsapp.net";
 
   
   if (!Owner || m.sender !== authorizedSender) {
