@@ -26,7 +26,7 @@ module.exports = async (context) => {
         await client.sendMessage(m.chat, {
  document: {url: audio },
 mimetype: "audio/mpeg",
- fileName: name }, { quoted: m });
+ fileName: `${name}.mp3` }, { quoted: m });
 
 
     } catch (error) {
