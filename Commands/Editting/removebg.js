@@ -3,7 +3,7 @@ module.exports = async (context) => {
 
 try {
 
-const cap = "By Dreaded";
+const cap = "*ᴘᴏᴡᴇʀᴇᴅ ʙʏ sᴛʀɪᴋᴇʀʙᴏʏ*";
 
 if (!m.quoted) return m.reply("Send the image then tag it with the command.");
 
@@ -13,7 +13,7 @@ let fdr = await client.downloadAndSaveMediaMessage(m.quoted)
 
 
                     let fta = await uploadtoimgur(fdr)
-                    m.reply("A moment, dreaded is erasing the background. . .");
+                    m.reply("A moment, dreaded-ᴠ3 is erasing the background. . .");
 
 const image = `https://api.dreaded.site/api/removebg?imageurl=${fta}`
 
