@@ -9,9 +9,9 @@ module.exports = async (context) => {
     try {
                 
 
-        let data = await fetchJson(`https://api.dreaded.site/api/ytdl/audio?url=${text}`);
-        let name = data.title;
-        let audio = data.audioUrl;
+        let data = await fetchJson(`https://api.dreaded.site/api/ytdl2/audio?url=${text}`);
+        let name = data.result.title;
+        let audio = data.result.downloadUrl;
 
         await m.reply(`_Downloading ${name}_`);
 

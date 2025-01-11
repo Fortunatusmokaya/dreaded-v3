@@ -9,9 +9,14 @@ module.exports = async (context) => {
     try {
                 
 
-        let data = await fetchJson(`https://api.dreaded.site/api/ytdl/video?url=${text}`);
+                let data = await fetchJson(`https://api.dreaded.site/api/ytdl2/video?url=${text}`);
+        if (!data.success) {
+            m.reply("Failed to fetch video download URL.");
+            return;
+        }
+
         let name = data.title;
-        let video = data.videoUrl;
+        let video = data.downloadUrl;
 
         await m.reply(`_Downloading ${name}_`);
 
