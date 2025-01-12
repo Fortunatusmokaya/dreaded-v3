@@ -2,7 +2,8 @@ module.exports = async (context) => {
     const { client, m, text, mime, uploadtoimgur, fetchJson } = context;
 
     try {
-        const cap = "By Dreaded";
+        const cap = "By Dreaded-v3";
+
 
         if (!m.quoted) return m.reply("Send the image then tag it with the command.");
         if (!/image/.test(mime)) return m.reply("That is not an image, try again while quoting an actual image.");
